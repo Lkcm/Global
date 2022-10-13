@@ -13,7 +13,7 @@ function Home() {
   return (
     <>
     
-    <div>Home🌎</div>
+    <div>Site do Lucas Home🌎</div>
 
     <div>{contador}</div>
     <button onClick={Adicionar}>Adicionar</button>
