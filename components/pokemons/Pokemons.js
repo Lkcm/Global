@@ -23,7 +23,7 @@ const poke = pokemons.results.map((index) =>
 
   return (
       <>
-    <h2>Pokemons</h2>
+    <h2>Pokemons :</h2>
     <ul>
         <li>{poke}</li>
     </ul>
