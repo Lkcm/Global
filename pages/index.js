@@ -1,22 +1,21 @@
-import { useState } from "react"
+import { Contador } from "../components/contador/Contador"
+import { Pokemons } from "../components/pokemons/Pokemons"
 
 
 function Home() {
-
- const [contador, setContador] = useState(0)
-
- const Adicionar = () => {
-   setContador(++contador)
- }
 
 
   return (
     <>
     
-    <div>Site do Lucas Home🌎</div>
+    <div>
+      Site do Lucas Home🌎
+      </div>
+    <Contador/>
+    <Pokemons/>
 
-    <div>{contador}</div>
-    <button onClick={Adicionar}>Adicionar</button>
+
+
     </>
   )
 }
