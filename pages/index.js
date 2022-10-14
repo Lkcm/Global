@@ -12,7 +12,6 @@ function Home() {
       Site do Lucas Home🌎
       </div>
     <Contador/>
-    <Pokemons/>
 
 
 
