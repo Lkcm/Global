@@ -9,7 +9,7 @@ function Home() {
     <>
     
     <div>
-      Site do Lucas Home🌎
+      Site do Lucas Kroger Home🌎
       </div>
     <Contador/>
 
