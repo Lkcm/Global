@@ -18,7 +18,7 @@ export function  ThemeChanger () {
 
     if(!mounted) return null;
 
-    const currentTheme = theme ;
+    const currentTheme = theme === "system" ? systemTheme : theme ;
 
     if(currentTheme ==="dark") {
       

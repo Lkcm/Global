@@ -17,7 +17,7 @@ function Home() {
     <>
     <div className="">
     <Navbar/>
-    <div className="container max-w-screen-lg  mx-auto pt-10">
+    <div className="container max-w-screen-lg mx-auto pt-10">
    
     <div className="mx-20">
 
@@ -35,10 +35,14 @@ function Home() {
       <div className="
       flex 
       flex-col 
-      gap-5 
       mt-20
       xsm:mt-5
       xsm:gap-1
+      xsm:items-center
+      lg:items-baseline
+      lg:gap-5
+      md:gap-4
+      sm:gap-4
       ">
       <h1 className="
       font-sans 
@@ -46,25 +50,31 @@ function Home() {
       sm:text-7xl 
       font-black 
       flex 
-      gap-10 
+      
       items-center
-      xsm:text-2xl
+      xsm:text-4xl
       
       ">
       Lucas Kroger 
       </h1>
       <div className="
-      font-sans text-3xl
+      font-sans
+      text-3xl
        text-zinc-400
        xsm:text-sm
-       ">This is my personal Landing Page</div>
+       lg:text-2xl
+       sm:text-lg
+       
+       "
+      >This is my personal Landing Page</div>
       <Contador/>
       </div>
         <Personagem/>
       </div>
       <div>
       <h2 className="
-      text-4xl
+      lg:text-4xl
+      sm:text-3xl
       pt-10
       xsm:text-lg
       xsm:pt-0

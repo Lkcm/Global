@@ -11,8 +11,9 @@ export function Contador () {
     dark:bg-zinc-700 
     rounded-lg
      p-3 
-     text-2xl
+     
      xsm:text-sm
+     sm:text-2xl
      ">
    Hello, I'm an programmer based in Brazil!
      </h3>

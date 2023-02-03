@@ -9,19 +9,19 @@ export function  Personagem () {
 
   const renderThemeChanger = () => {
 
-    const currentTheme = theme ;
+    const currentTheme = theme === "system" ? systemTheme : theme ;
 
     if(currentTheme ==="dark") {
       
       return (        
-        <Image src={personagemLua} className="object-contain"/>
+        <Image src={personagemLua} className="object-contain "/>
       )
     }
 
     else {
       
       return (
-        <Image src={personagemSol} className="object-contain"/>
+        <Image src={personagemSol} className="object-contain "/>
       )
     }
   }
