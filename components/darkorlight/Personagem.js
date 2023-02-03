@@ -9,7 +9,7 @@ export function  Personagem () {
 
   const renderThemeChanger = () => {
 
-    const currentTheme = theme === "system" ? systemTheme : theme ;
+    const currentTheme = theme;
 
     if(currentTheme ==="dark") {
       
