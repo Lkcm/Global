@@ -1,6 +1,8 @@
 import Image from "next/image"
+import Link from "next/link"
 import cancun from "../../assets/myprojects/cancun.png"
 import chicago from "../../assets/myprojects/chicago.png"
+import book from "../../assets/myprojects/bookCollection.png"
 
 export function Slides () {
   return (
@@ -13,14 +15,18 @@ export function Slides () {
       lg:flex-row
       items-center
        ">
-      <div className="hover:scale-105">
-      <Image src={cancun} className=""/>
+      <div className="hover:scale-105 cursor-pointer">
+      <Link href="https://n-bkcollection.web.app/">
+      <Image src={chicago} />
+      </Link>
       </div>
-      <div className="hover:scale-105">
-      <Image src={chicago} className=""/>
+      <div className="hover:scale-105 cursor-pointer">
+        <Link href="https://n-bkcollection.web.app/">
+        <Image src={book} />
+        </Link>
       </div>
-      <div className="hover:scale-105">
-      <Image src={cancun} className=""/>
+      <div className="hover:scale-105 cursor-pointer">
+      <Image src={cancun} />
       </div>
       </div>
     </div>
