@@ -16,7 +16,7 @@ export function Slides () {
       items-center
        ">
       <div className="hover:scale-105 cursor-pointer">
-      <Link href="https://n-bkcollection.web.app/">
+      <Link href="https://escotur-project.vercel.app/">
       <Image src={chicago} />
       </Link>
       </div>
@@ -26,7 +26,9 @@ export function Slides () {
         </Link>
       </div>
       <div className="hover:scale-105 cursor-pointer">
-      <Image src={cancun} />
+        <Link href="https://escotur-project.vercel.app/">
+          <Image src={cancun} />
+        </Link>
       </div>
       </div>
     </div>

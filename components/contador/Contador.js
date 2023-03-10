@@ -15,7 +15,7 @@ export function Contador () {
      xsm:text-sm
      sm:text-2xl
      ">
-   Hello, I'm an programmer based in Brazil!
+   Hello, I'm an programmer 😎
      </h3>
    </div>
    </div>
