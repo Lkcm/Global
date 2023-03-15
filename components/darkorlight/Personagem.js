@@ -1,34 +1,44 @@
-import Image from "next/image"
 import { useTheme } from "next-themes";
-import personagemSol from "../../assets/themeChange/PersonagemSoll.png"
-import personagemLua from "../../assets/themeChange/PersonagemLua.png"
+import { useEffect, useState } from "react";
+import lightPer from "../../assets/videos/light.mp4";
+import darkPer from "../../assets/videos/dark.mp4";
 
-export function  Personagem () {
+export function Personagem() {
+  const { theme } = useTheme();
+  const [play, setPlay] = useState(true);
 
-  const { theme, setTheme } = useTheme()
+  
 
   const renderThemeChanger = () => {
-
     const currentTheme = theme;
 
-    if(currentTheme ==="dark") {
-      
-      return (        
-        <Image src={personagemLua} className="object-contain "/>
-      )
-    }
-
-    else {
-      
+    if (currentTheme === "dark") {
       return (
-        <Image src={personagemSol} className="object-contain "/>
-      )
+        <video autoPlay loop className="object-contain">
+          <source src={darkPer} />
+        </video>
+      );
+    } else {
+      return (
+        <div>
+          <video
+            autoPlay
+            loop
+            className="object-contain"
+          >
+            <source src={lightPer} />
+          </video>
+        </div>
+      );
     }
-  }
-  
-  return (
-    <div>
-      {renderThemeChanger()}
-    </div>
-  )
+  };
+
+  useEffect(() => {
+    if (!play) {
+      // perform some action when the video is clicked
+      console.log("Video clicked");
+    }
+  }, [play]);
+
+  return <div>{renderThemeChanger()}</div>;
 }

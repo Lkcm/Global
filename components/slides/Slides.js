@@ -1,10 +1,14 @@
+import React from "react"
 import Image from "next/image"
-import Link from "next/link"
 import cancun from "../../assets/myprojects/cancun.png"
 import chicago from "../../assets/myprojects/chicago.png"
 import book from "../../assets/myprojects/bookCollection.png"
 
 export function Slides () {
+
+
+
+
   return (
     <div className="mt-10">
       <div className="
@@ -15,21 +19,41 @@ export function Slides () {
       lg:flex-row
       items-center
        ">
+
+
+
       <div className="hover:scale-105 cursor-pointer">
-      <Link href="https://escotur-project.vercel.app/">
+
+
+
+
+
+
+      <a href="https://escotur-project.vercel.app/" >
       <Image src={chicago} />
-      </Link>
+      </a>
       </div>
-      <div className="hover:scale-105 cursor-pointer">
-        <Link href="https://n-bkcollection.web.app/">
+
+
+
+
+
+    <div className="hover:scale-105 cursor-pointer">
+        <a href="https://n-bkcollection.web.app/">
         <Image src={book} />
-        </Link>
+        </a>
       </div>
+
+
+
       <div className="hover:scale-105 cursor-pointer">
-        <Link href="https://escotur-project.vercel.app/">
+        <a href="https://escotur-project.vercel.app/">
           <Image src={cancun} />
-        </Link>
-      </div>
+        </a>
+      </div> 
+
+
+
       </div>
     </div>
   )

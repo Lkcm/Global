@@ -13,6 +13,7 @@ import { Pokemons } from "../components/pokemons/Pokemons"
 function Home() {
 
 
+
   return (
     <>
     <div className="">
@@ -49,7 +50,8 @@ function Home() {
       lg:text-9xl 
       sm:text-7xl 
       font-black 
-      flex 
+      flex
+      
       
       items-center
       xsm:text-4xl
@@ -69,7 +71,10 @@ function Home() {
       >This is my personal Landing Page</div>
       <Contador/>
       </div>
-        <Personagem/>
+      <Personagem/>
+
+
+        
       </div>
       <div>
       <h2 className="
