@@ -1,44 +1,46 @@
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import {  useRef } from "react";
 import lightPer from "../../assets/videos/light.mp4";
 import darkPer from "../../assets/videos/dark.mp4";
 
-export function Personagem() {
+export function Personagem() { // receba o estado inicial como um prop
   const { theme } = useTheme();
-  const [play, setPlay] = useState(true);
-
-  
+  const bvideoRef = useRef(null)
+  const wvideoRef = useRef(null)
 
   const renderThemeChanger = () => {
-    const currentTheme = theme;
+    const currentTheme = theme ; // use o estado inicial se o tema ainda não foi definido
 
     if (currentTheme === "dark") {
       return (
-        <video autoPlay loop className="object-contain">
-          <source src={darkPer} />
-        </video>
+        <div className=" hover:cursor-pointer"onMouseEnter={() => bvideoRef.current.play()} onMouseLeave={() => bvideoRef.current.pause()}>
+        <video
+          ref={bvideoRef}
+          src={darkPer}
+          type="video/mp4"
+          loop
+          muted
+          className="object-contain"
+        />
+        
+      </div>
       );
     } else {
       return (
-        <div>
-          <video
-            autoPlay
-            loop
-            className="object-contain"
-          >
-            <source src={lightPer} />
-          </video>
-        </div>
+        <div className="hover:cursor-pointer"onMouseEnter={() => wvideoRef.current.play()} onMouseLeave={() => wvideoRef.current.pause()}>
+        <video
+          ref={wvideoRef}
+          src={lightPer}
+          type="video/mp4"
+          loop
+          muted
+          className="object-contain"
+        />
+        
+      </div>
       );
     }
   };
-
-  useEffect(() => {
-    if (!play) {
-      // perform some action when the video is clicked
-      console.log("Video clicked");
-    }
-  }, [play]);
 
   return <div>{renderThemeChanger()}</div>;
 }

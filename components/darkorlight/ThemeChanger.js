@@ -3,7 +3,7 @@ import { useTheme } from "next-themes";
 import {useState, useEffect} from "react";
 import Sol from "../../assets/themeChange/Sol.png"
 import Lua from "../../assets/themeChange/Lua.png"
-import { Personagem } from "./Personagem";
+
 
 export function  ThemeChanger () {
   const [mounted, setMounted] = useState(false);
